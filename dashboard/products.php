@@ -148,8 +148,8 @@ if($per_id==3){
                                             <td <?php echo $s; ?>><?php echo $cat_name;  ?></td>
                                             <td <?php echo $s; ?>><?php echo $priority;  ?></td>
                                             <td <?php echo $s; ?>><?php echo $n;  ?></td>
-                                            <td <?php echo $s; ?>><a href="categories_edit1.php?id=<?php  echo $id; ?>"><span class="badge badge-warning">ویرایش</span></a></td>
-                                            <td <?php echo $s; ?>><a href="categories_delete.php?id=<?php  echo $id; ?>"><span class="badge badge-danger">حذف</span></a></td>
+                                            <td <?php echo $s; ?>><a href="products_edit1.php?id=<?php  echo $id; ?>"><span class="badge badge-warning">ویرایش</span></a></td>
+                                            <td <?php echo $s; ?>><a href="products_delete.php?id=<?php  echo $id; ?>"><span class="badge badge-danger">حذف</span></a></td>
                                         <?php
                                     }
                                     ?>
