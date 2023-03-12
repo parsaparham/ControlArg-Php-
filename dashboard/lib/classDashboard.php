@@ -314,9 +314,9 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="admin_list_available.php" class="">
+                                        <a href="banks.php" class="">
                                             <i class="icon-home"></i>
-                                            <span>تعیین تاریخ نوبت   </span>
+                                            <span>حسابهای بانکی</span>
                                         </a>
                                     </li>
                                     <li>

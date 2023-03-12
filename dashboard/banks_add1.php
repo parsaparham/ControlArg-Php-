@@ -86,10 +86,30 @@ $header->put_header();
                                     </div><!-- /.buttons-box -->
                                 </div><!-- /.portlet-heading -->
                                 <div class="portlet-body">
-                                    <form method="post" role="form" action="admin_account_add2.php">
+                                    <form method="post" role="form" action="banks_add2.php">
                                         <div class="form-body">
 
 
+
+                                            <div class="form-group">
+                                                <label> نام بانک</label>
+                                                <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="icon-user"></i>
+                                                </span>
+                                                    <input name="name" type="text" class="form-control" placeholder=" مثال : صادرات ، ملی ، ملت  ">
+                                                </div><!-- /.input-group -->
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label>  شعبه</label>
+                                                <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="icon-user"></i>
+                                                </span>
+                                                    <input name="branch" type="text" class="form-control" placeholder="  مثال : میدان انقلاب ">
+                                                </div><!-- /.input-group -->
+                                            </div><!-- /.form-group -->
 
                                             <div class="form-group">
                                                 <label> شماره کارت</label>
@@ -97,7 +117,27 @@ $header->put_header();
                                                 <span class="input-group-addon">
                                                     <i class="icon-user"></i>
                                                 </span>
-                                                    <input name="number" type="text" class="form-control" placeholder=" شماره حساب ">
+                                                    <input name="card" type="text" class="form-control" placeholder="  مثال : 6037-6975-1111-2222 ">
+                                                </div><!-- /.input-group -->
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label> شماره حساب</label>
+                                                <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="icon-user"></i>
+                                                </span>
+                                                    <input name="account" type="text" class="form-control" placeholder="  مثال : 0104849051234 ">
+                                                </div><!-- /.input-group -->
+                                            </div><!-- /.form-group -->
+
+                                            <div class="form-group">
+                                                <label> شماره شبا</label>
+                                                <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="icon-user"></i>
+                                                </span>
+                                                    <input name="sheba" type="text" class="form-control" placeholder="  مثال : IR70 1230 0000 104897001 ">
                                                 </div><!-- /.input-group -->
                                             </div><!-- /.form-group -->
 
@@ -105,23 +145,23 @@ $header->put_header();
 
 
                                             <div class="form-group">
-                                                <label>نام بانک</label>
+                                                <label>صاحب حساب</label>
                                                 <div class="input-group">
                                                 <span class="input-group-addon">
                                                     <i class="icon-user"></i>
                                                 </span>
-                                                    <input name="bank" type="text" class="form-control" placeholder=" نام بانک ">
+                                                    <input name="owner" type="text" class="form-control" placeholder=" مثال :  علیرضا افتخاری ">
                                                 </div><!-- /.input-group -->
                                             </div><!-- /.form-group -->
 
 
                                             <div class="form-group">
-                                                <label> صاحب حساب</label>
+                                                <label>  اولویت</label>
                                                 <div class="input-group">
                                                 <span class="input-group-addon">
                                                     <i class="icon-user"></i>
                                                 </span>
-                                                    <input name="owner" type="text" class="form-control" placeholder="صاحب حساب ">
+                                                    <input name="priority" type="text" class="form-control" placeholder=" مثال : 1 ">
                                                 </div><!-- /.input-group -->
                                             </div><!-- /.form-group -->
 
@@ -134,7 +174,7 @@ $header->put_header();
                                                 <i class="icon-check"></i>
                                                 ثبت
                                             </button>
-                                            <a href="admin_list_available.php"><button type="button" class="btn btn-warning btn-round">
+                                            <a href="banks.php"><button type="button" class="btn btn-warning btn-round">
                                                 بازگشت
                                                 <i class="icon-close"></i>
                                                 </button></a>

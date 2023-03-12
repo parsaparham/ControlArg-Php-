@@ -59,10 +59,15 @@ if ($per_id == 3) {
                     //   $adminButtons=new adminButtons();
                     //  $adminButtons->put_adminButtons();
 
-                    $sql = "select * from categories where id=?";
+                    $sql = "select * from banks where id=?";
                     $arr = array($did);
                     $res = $object->select($sql, $arr);
                     $name = $res[0]['name'];
+                    $branch = $res[0]['branch'];
+                    $card = $res[0]['card'];
+                    $account = $res[0]['account'];
+                    $sheba = $res[0]['sheba'];
+                    $owner = $res[0]['owner'];
                     $priority = $res[0]['priority'];
                     $active = $res[0]['active'];
 
@@ -75,7 +80,7 @@ if ($per_id == 3) {
                                 <div class="portlet-title">
                                     <h3 class="title">
                                         <i class="icon-settings"></i>
-                                        ویرایش دسته بندی  </h3>
+                                        ویرایش حساب بانکی  </h3>
                                 </div><!-- /.portlet-title -->
                                 <div class="buttons-box">
                                     <a class="btn btn-sm btn-default btn-round btn-fullscreen" rel="tooltip"
@@ -89,45 +94,80 @@ if ($per_id == 3) {
                                 </div><!-- /.buttons-box -->
                             </div><!-- /.portlet-heading -->
                             <div class="portlet-body">
-                                <form method="post" role="form" action="categories_edit2.php" enctype="multipart/form-data">
+                                <form method="post" role="form" action="banks_edit2.php" enctype="multipart/form-data">
                                     <div class="form-body">
                                         <div class="form-group">
-                                            <label> نام دسته بندی</label>
+                                            <label> نام بانک</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">
                                                     <i class="icon-user"></i>
                                                 </span>
-                                                <input name="name" type="text" class="form-control"
-                                                       value="  <?php echo $name; ?> ">
+                                                <input name="name" type="text" class="form-control" value="<?php echo $name ?>">
                                             </div><!-- /.input-group -->
                                         </div><!-- /.form-group -->
 
                                         <div class="form-group">
-                                            <label>اولویت</label>
+                                            <label>  شعبه</label>
                                             <div class="input-group">
                                                 <span class="input-group-addon">
                                                     <i class="icon-user"></i>
                                                 </span>
-                                                <input name="priority" type="number" class="form-control"
-                                                       value="<?php echo $priority; ?>">
+                                                <input name="branch" type="text" class="form-control" value="<?php echo $branch ?>">
+                                            </div><!-- /.input-group -->
+                                        </div><!-- /.form-group -->
+
+                                        <div class="form-group">
+                                            <label> شماره کارت</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="icon-user"></i>
+                                                </span>
+                                                <input name="card" type="text" class="form-control" value="<?php echo $card ?>">
+                                            </div><!-- /.input-group -->
+                                        </div><!-- /.form-group -->
+
+                                        <div class="form-group">
+                                            <label> شماره حساب</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="icon-user"></i>
+                                                </span>
+                                                <input name="account" type="text" class="form-control" value="<?php echo $account ?>">
+                                            </div><!-- /.input-group -->
+                                        </div><!-- /.form-group -->
+
+                                        <div class="form-group">
+                                            <label> شماره شبا</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="icon-user"></i>
+                                                </span>
+                                                <input name="sheba" type="text" class="form-control" value="<?php echo $sheba ?>">
                                             </div><!-- /.input-group -->
                                         </div><!-- /.form-group -->
 
 
-                                        <div class="form-group relative">
-                                            <input type="file" class="form-control">
-                                            <label>آپلود فایل</label>
-                                            <div class="input-group round">
-                                                <input type="file" name="fileToUpload"
-                                                       placeholder="برای آپلود کلیک کنید">
-                                                <span class="input-group-btn input-group-sm">
-                                                    <button type="button" class="btn btn-info">
-                                                        <i class="icon-picture"></i>
-                                                        آپلود عکس
-                                                    </button>
+
+
+                                        <div class="form-group">
+                                            <label>صاحب حساب</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="icon-user"></i>
                                                 </span>
+                                                <input name="owner" type="text" class="form-control" value="<?php echo $owner ?>">
                                             </div><!-- /.input-group -->
-                                            <div class="help-block"></div>
+                                        </div><!-- /.form-group -->
+
+
+                                        <div class="form-group">
+                                            <label>  اولویت</label>
+                                            <div class="input-group">
+                                                <span class="input-group-addon">
+                                                    <i class="icon-user"></i>
+                                                </span>
+                                                <input name="priority" type="text" class="form-control" value="<?php echo $priority ?>">
+                                            </div><!-- /.input-group -->
                                         </div><!-- /.form-group -->
 
 
@@ -158,7 +198,7 @@ if ($per_id == 3) {
                                             <i class="icon-check"></i>
                                             ثبت
                                         </button>
-                                        <a href="categories.php">
+                                        <a href="banks.php">
                                             <button type="button" class="btn btn-warning btn-round">
                                                 بازگشت
                                                 <i class="icon-close"></i>
