@@ -16,6 +16,7 @@ if($per_id==3){
 
 
 $date=jdate('Y/n/d');
+$time=jdate('h:i');
 
 
 $header=new header();
@@ -73,7 +74,7 @@ $header->put_header();
                                     <div class="portlet-title">
                                         <h3 class="title">
                                             <i class="icon-settings"></i>
-ایجاد دسته بندی جدید                                        </h3>
+ایجاد اسلایدشو جدید                                        </h3>
                                     </div><!-- /.portlet-title -->
                                     <div class="buttons-box">
                                         <a class="btn btn-sm btn-default btn-round btn-fullscreen" rel="tooltip" title="تمام صفحه" href="#">
@@ -85,22 +86,20 @@ $header->put_header();
                                     </div><!-- /.buttons-box -->
                                 </div><!-- /.portlet-heading -->
                                 <div class="portlet-body">
-                                    <form method="post" role="form" action="categories_add2.php" enctype="multipart/form-data">
+                                    <form method="post" role="form" action="slideShows_add2.php" enctype="multipart/form-data">
                                         <div class="form-body">
 
 
 
                                             <div class="form-group">
-                                                <label> نام دسته بندی</label>
+                                                <label> نام اسلایدشو </label>
                                                 <div class="input-group">
                                                 <span class="input-group-addon">
                                                     <i class="icon-user"></i>
                                                 </span>
-                                                    <input name="name" type="text" class="form-control" placeholder="  مثلا : دوربین مداربسته ">
+                                                    <input name="name" type="text" class="form-control" placeholder="  مثلا : مناسبت حضرت علی (ع) ">
                                                 </div><!-- /.input-group -->
                                             </div><!-- /.form-group -->
-
-
 
 
                                             <div class="form-group">
@@ -138,7 +137,7 @@ $header->put_header();
                                                 <i class="icon-check"></i>
                                                 ثبت
                                             </button>
-                                            <a href="categories.php"><button type="button" class="btn btn-warning btn-round">
+                                            <a href="slideShows.php"><button type="button" class="btn btn-warning btn-round">
                                                 بازگشت
                                                 <i class="icon-close"></i>
                                                 </button></a>
@@ -151,14 +150,6 @@ $header->put_header();
                             </div><!-- /.portlet -->
 
                         </div><!-- /.col-lg-6 -->
-
-
-
-
-
-
-
-
 
 
 

@@ -320,9 +320,9 @@
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="admin_list_logins.php" class="">
+                                        <a href="slideShows.php" class="">
                                             <i class="icon-home"></i>
-                                            <span>  لاگین ها و کدهای ورود </span>
+                                            <span>اسلایدشو ها</span>
                                         </a>
                                     </li>
                                     <li>
