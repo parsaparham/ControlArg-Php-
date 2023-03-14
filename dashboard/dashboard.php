@@ -1,8 +1,11 @@
 <?php
 session_start();
+if(isset($_SESSION['mobile'])){
 include("lib/classDashboard.php");
 include ("lib/connect.php");
 include ("lib/jdf.php");
+
+
 
 
 $object=new class_parent();
@@ -64,7 +67,7 @@ if($per_id==3) {
                             <div class="portlet-title">
                                 <h3 class="title">
                                     <i class="icon-frane"></i>
-                                    آخرین فال های گرفته شده
+                                    لیست سفارشات
                                 </h3>
                             </div><!-- /.portlet-title -->
                             <div class="buttons-box">
@@ -176,9 +179,13 @@ if($per_id==3) {
 
     $footer=new footer();
     $footer->put_footer();
+}else{
+    header('loacation:logout.php');
 }
 
-
+}else{
+    header('loacation:logout.php');
+}
 
 
 ?>

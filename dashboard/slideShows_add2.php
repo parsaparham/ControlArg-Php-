@@ -93,7 +93,7 @@ else {
 
 
 phpAlert(" اسلایدشو با موفقیت ایجاد شد.");
-/**/?><!-- <script> location.assign("slideShows.php");  </script> --><?php
+?> <script> location.assign("slideShows.php");  </script> <?php
 
 
 
