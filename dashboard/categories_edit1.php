@@ -41,7 +41,7 @@ if ($per_id == 3) {
                 <div class="col-md-12">
                     <div class="breadcrumb-box border shadow">
                         <ul class="breadcrumb">
-                            <li><a href="dashboard.html">پیشخوان</a></li>
+                            <li><a href="dashboard.php">پیشخوان</a></li>
                         </ul>
                         <div class="breadcrumb-left">
                             <?php echo jdate('l,Y/m/d'); ?>

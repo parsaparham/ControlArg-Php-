@@ -2,6 +2,7 @@
 
 include("lib/connect.php");
 include("libsms/nusoap.php");
+include ("lib/jdf.php");
 
 $object=new class_parent();
 
@@ -15,6 +16,8 @@ $mobile = $_POST['mobile'];
 $mobile=check_injection($mobile);
 $password = $_POST['password'];
 $password=check_injection($password);
+$time=jdate('H:i:s');
+$date=jdate('Y/m/d');
 
 
 
@@ -39,7 +42,7 @@ if($num>0){
 
 
 
-    $sql = "INSERT INTO users (fname,lname,username,mobile,password) VALUES ('$firstname','$lastname','$username','$mobile','$password')";
+    $sql = "INSERT INTO users (fname,lname,username,mobile,password,date,time) VALUES ('$firstname','$lastname','$username','$mobile','$password','$date','$time')";
     $object->myquery($sql);
 
 

@@ -114,18 +114,14 @@ function check_injection($a){
 
 function member($x){
     $a="مدیر سایت";
-    $b="فال گیرنده";
     $c="عضو";
     if($x==3){return $a;}
-    if($x==2){return $b;}
     if($x==1){return $c;}
 }
 function memberback($x){
     $a="3";
-    $b="2";
     $c="1";
     if($x=="مدیر سایت"){return $a;}
-    if($x=="فال گیرنده"){return $b;}
     if($x=="عضو"){return $c;}
 }
 
