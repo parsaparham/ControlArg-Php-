@@ -104,6 +104,7 @@ if($per_id==3){
                                         <th>ID</th>
                                         <th>نام  محصول </th>
                                         <th>  دسته بندی </th>
+                                        <th>   توضیحات </th>
                                         <th>اولویت </th>
                                         <th>فعال / غیرفعال </th>
                                         <th>ویرایش </th>
@@ -120,6 +121,7 @@ if($per_id==3){
                                         $radif=$radif+1;
                                         $name=$row4['name'];
                                         $cat_id=$row4['cat_id'];
+                                        $description=$row4['description'];
                                         $id=$row4['id'];
                                         $priority=$row4['priority'];
                                         $active=$row4['active'];
@@ -146,6 +148,7 @@ if($per_id==3){
                                             <td <?php echo $s; ?>><?php echo $id;  ?></td>
                                             <td <?php echo $s; ?>><?php echo $name;  ?></td>
                                             <td <?php echo $s; ?>><?php echo $cat_name;  ?></td>
+                                            <td <?php echo $s; ?>><?php echo $description;  ?></td>
                                             <td <?php echo $s; ?>><?php echo $priority;  ?></td>
                                             <td <?php echo $s; ?>><?php echo $n;  ?></td>
                                             <td <?php echo $s; ?>><a href="products_edit1.php?id=<?php  echo $id; ?>"><span class="badge badge-warning">ویرایش</span></a></td>

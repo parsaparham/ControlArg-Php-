@@ -23,7 +23,7 @@ $arr=array($category);
 $res=$object->select($sql,$arr);
 $cat_id=$res[0]['id'];
 
-$sql="select * from products where name=?";
+$sql="select * from products where name=? and id!=$id";
 $arr=array($name);
 $num=$object->num($sql,$arr);
 if($num>0){

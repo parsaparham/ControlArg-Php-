@@ -32,7 +32,7 @@ if($active=="disable"){$active=0;}
 
 
 
-$sql="select * from users where mobile=?";
+$sql="select * from users where mobile=? AND id!=$id";
 $arr=array($mobile);
 $num=$object->num($sql,$arr);
 if($num>0){
@@ -41,7 +41,7 @@ if($num>0){
     exit();
 }
 
-$sql="select * from users where username=?";
+$sql="select * from users where username=? AND id!=$id";
 $arr=array($username);
 $num=$object->num($sql,$arr);
 if($num>0){
